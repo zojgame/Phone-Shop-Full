@@ -1,0 +1,11 @@
+svg {
+  cursor: pointer;
+}
+
+.left {
+  transform: rotate(180deg);
+}
+
+.disabled {
+  cursor: not-allowed;
+}

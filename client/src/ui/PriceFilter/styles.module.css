@@ -1,0 +1,24 @@
+.priceSorting {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.priceSorting:not(.selected) svg path {
+  stroke: var(--button-tertiary-default);
+}
+
+.selected svg path {
+  stroke: var(--button-tertiary-active);
+}
+
+div.selected {
+  color: var(--button-tertiary-active);
+}
+
+.priceSorting:hover:not(.selected) {
+  color: var(--button-tertiary-hover);
+}
+
+.priceSorting:hover:not(.selected) svg path {
+  stroke: var(--button-tertiary-default);
+}

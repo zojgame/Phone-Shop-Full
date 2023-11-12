@@ -1,0 +1,106 @@
+.colorsContainer {
+  display: flex;
+  flex-direction: column;
+  min-width: 368px;
+  height: 100%;
+  user-select: none;
+}
+
+.colorsContainer h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+.colors {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.colorCheckbox {
+  position: relative;
+  display: flex;
+  padding: 8px;
+  max-height: 40px;
+  border-radius: 20px;
+  gap: 12px;
+}
+
+.colorCheckbox input {
+  display: none;
+}
+
+.colorCheckbox label {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.colorCheckbox label:after {
+  content: url("../../../public/whiteCheckbox.svg");
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.black label {
+  background-color: black;
+}
+
+.green label {
+  background-color: #27ae60;
+}
+
+.blue label {
+  background-color: #798fff;
+}
+
+.purple label {
+  background-color: #9b51e0;
+}
+
+.white {
+  background-color: #ebecf2;
+}
+
+.white label {
+  background-color: white;
+}
+
+.white label:after {
+  content: url("../../../public/blackCheckbox.svg");
+}
+
+.colorCheckbox input:checked + label:after {
+  opacity: 1;
+}
+
+.resetColorsBtn {
+  cursor: pointer;
+  user-select: none;
+  font-size: 16px;
+  color: #a3a7bf;
+  padding: 5px 0;
+  line-height: 22.4px;
+  text-align: center;
+}
+
+.resetColorsBtn:hover {
+  color: var(--button-tertiary-hover);
+}
+
+@media (max-width: 460px) {
+  .colorsContainer {
+    min-width: 100%;
+  }
+}

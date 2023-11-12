@@ -1,0 +1,6 @@
+.cartPageContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  margin: 32px 0;
+}

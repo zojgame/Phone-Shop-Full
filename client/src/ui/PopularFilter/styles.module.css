@@ -1,0 +1,7 @@
+div.selected {
+  color: var(--button-tertiary-active);
+}
+
+.popularSorting:hover:not(.selected) {
+  color: var(--button-tertiary-hover);
+}

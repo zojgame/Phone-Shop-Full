@@ -1,0 +1,52 @@
+.filtersContainer,
+.filters,
+.sorting {
+  display: flex;
+  flex-direction: row;
+}
+
+.filtersContainer {
+  user-select: none;
+  margin: 32px 0;
+  align-items: center;
+}
+
+.filtersContainer h1 {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  line-height: 32px;
+  min-width: 368px;
+  margin-right: 32px;
+}
+
+.filters {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sorting {
+  cursor: pointer;
+  gap: 32px;
+}
+
+.sorting {
+  color: var(--button-tertiary-default);
+}
+
+@media (max-width: 840px) {
+  .filtersContainer {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .filtersContainer h1 {
+    min-width: 100%;
+  }
+
+  .filters {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}

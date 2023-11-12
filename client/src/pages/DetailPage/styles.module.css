@@ -1,0 +1,6 @@
+.detailPageContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  margin-top: 32px;
+}

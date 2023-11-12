@@ -1,0 +1,1 @@
+export { productRouter } from "./productsRouter";

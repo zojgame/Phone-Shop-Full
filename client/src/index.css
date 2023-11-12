@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Manrope", sans-serif;
+  --button-tertiary-default: #a3a7bf;
+  --button-tertiary-hover: #777b8c;
+  --button-tertiary-active: #798fff;
+
+  --button-primary-default: #798fff;
+  --button-primary-hover: #6172cc;
+
+  --button-secondary-default: #ffffff;
+  --button-secondary-hover: #ebecf2;
+}

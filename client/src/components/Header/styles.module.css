@@ -1,0 +1,53 @@
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #ebecf2;
+  padding: 12px 40px;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32.4px;
+}
+
+.basket {
+  position: relative;
+  cursor: pointer;
+}
+
+.basket:hover svg path {
+  stroke: var(--button-tertiary-hover);
+}
+
+.basket:active svg path {
+  stroke: var(--button-tertiary-active);
+}
+
+.basket svg path {
+  stroke: var(--button-tertiary-default);
+}
+
+.productCount {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  color: white;
+  left: 16px;
+  top: -8px;
+  border-radius: 50%;
+}
+
+.productCount {
+  background: var(--button-primary-default);
+}
+
+.basket:hover .productCount {
+  background: var(--button-primary-hover);
+}

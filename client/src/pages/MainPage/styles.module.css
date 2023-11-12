@@ -1,0 +1,21 @@
+.mainPageContainer {
+  padding: 0 40px;
+  min-height: calc(100vh - 154px);
+}
+
+.colorsAndProductsContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  flex-wrap: no-wrap;
+}
+
+.loaderContainer {
+  width: 100%;
+}
+
+@media (max-width: 840px) {
+  .colorsAndProductsContainer {
+    flex-wrap: wrap;
+  }
+}

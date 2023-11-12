@@ -1,0 +1,25 @@
+.detailBtn {
+  background: var(--button-secondary-default);
+  display: flex;
+  width: 155px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+  color: #798fff;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #ebecf2;
+  border-radius: 8px;
+}
+
+.detailBtn:hover {
+  background: var(--button-secondary-hover);
+}
+
+@media (max-width: 680px) {
+  div.detailBtn {
+    display: none;
+  }
+}

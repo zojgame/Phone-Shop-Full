@@ -1,0 +1,30 @@
+.goBackButton {
+  margin-bottom: 32px;
+  width: 95px;
+  display: flex;
+  gap: 17px;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  color: var(--button-tertiary-default);
+}
+
+.goBackButton svg path {
+  stroke: var(--button-tertiary-default);
+}
+
+.goBackButton:hover svg path {
+  stroke: var(--button-tertiary-hover);
+}
+
+.goBackButton:active svg path {
+  stroke: var(--button-tertiary-active);
+}
+
+.goBackButton:hover {
+  color: var(--button-tertiary-hover);
+}
+
+.goBackButton:active {
+  color: var(--button-tertiary-active);
+}

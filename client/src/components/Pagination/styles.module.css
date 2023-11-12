@@ -1,0 +1,6 @@
+.pagination {
+  gap: 16px;
+  color: var(--button-tertiary-default);
+  display: flex;
+  flex-direction: row;
+}

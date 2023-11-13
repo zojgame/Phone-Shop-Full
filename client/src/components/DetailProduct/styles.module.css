@@ -109,3 +109,20 @@
   font-size: 20px;
   margin-bottom: 16px;
 }
+
+@media (max-width: 840px) {
+  .product,
+  .productDetail > div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product {
+    gap: 20px;
+  }
+
+  .product img {
+    max-width: 464px;
+    height: 232px;
+  }
+}

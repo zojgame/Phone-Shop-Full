@@ -14,7 +14,7 @@
   width: 100%;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 1050px) {
   .colorsAndProductsContainer {
     flex-wrap: wrap;
   }

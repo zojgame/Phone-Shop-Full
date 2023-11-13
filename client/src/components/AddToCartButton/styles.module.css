@@ -20,3 +20,9 @@
 .productAddToCartBtn:not(.disabled):hover {
   background: var(--button-primary-hover);
 }
+
+@media (max-width: 680px) {
+  .productAddToCartBtn {
+    width: 144px;
+  }
+}

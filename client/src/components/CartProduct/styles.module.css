@@ -89,3 +89,24 @@
 .product {
   border-top: 2px solid #ebecf2;
 }
+
+@media (max-width: 680px) {
+  .productFirstSection {
+    padding: 8px 0 8px 16px;
+  }
+  .productColors {
+    gap: 4px;
+  }
+  .productColors div {
+    width: 16px;
+    height: 16px;
+  }
+
+  .product {
+    flex-wrap: wrap;
+  }
+
+  .productSecondSection {
+    flex-direction: row;
+  }
+}

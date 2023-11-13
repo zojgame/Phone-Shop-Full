@@ -7,6 +7,7 @@ const ColorsFilterComponent = () => {
 
   const handleOnColorClick = (event: React.ChangeEvent<HTMLInputElement>) => {
     const isChecked = event.target.checked;
+
     const color = event.target.getAttribute("data-color");
     const updatedColors = {
       ...colors,

@@ -22,21 +22,21 @@ export enum SORT_BY {
   DESCENDING_PRICE = "descending price",
 }
 
-export const sortProducts = (sortBy: SORT_BY, products: Product[]) => {
+export const sortProducts = (sortBy: string, products: Product[]) => {
   if (sortBy === SORT_BY.POPULAR) {
-    const sortedProducts = products.sort((productA, productB) => {
+    const sortedProducts = [...products].sort((productA, productB) => {
       return productA.popularity - productB.popularity;
     });
     return sortedProducts;
   }
   if (sortBy === SORT_BY.ASCENDING_PRICE) {
-    const sortedProducts = products.sort((productA, productB) => {
+    const sortedProducts = [...products].sort((productA, productB) => {
       return productA.price - productB.price;
     });
     return sortedProducts;
   }
 
-  const sortedProducts = products.sort((productA, productB) => {
+  const sortedProducts = [...products].sort((productA, productB) => {
     return productB.price - productA.price;
   });
   return sortedProducts;

@@ -19,7 +19,19 @@
 }
 
 .productFirstSection {
-  padding: 16px 0 16px 32px;
+  padding: 16px 0 16px 0;
+}
+
+.product > div {
+  gap: 32px;
+  width: 100%;
+}
+
+.product > div > div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
 }
 
 .productSecondSection {
@@ -100,5 +112,35 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 17px;
+  }
+
+  .product > div {
+    gap: 16px;
+    align-items: center;
+  }
+
+  .product > div > div {
+    flex-direction: column;
+  }
+
+  .productInfo {
+    gap: 8px;
+  }
+  .productFirstSection {
+    margin-bottom: 16px;
+  }
+
+  .productFirstSection,
+  .productSecondSection {
+    padding: 0;
+  }
+
+  .productColors div {
+    width: 16px;
+    height: 16px;
+  }
+
+  .productPrice {
+    line-height: 24px;
   }
 }

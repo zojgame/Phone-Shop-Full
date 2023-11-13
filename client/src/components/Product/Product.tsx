@@ -18,21 +18,23 @@ const ProductComponent = ({ product }: ProductComponentProps) => {
     <div className={styles.product}>
       <div>
         <img src={product.image} alt={product.name} />
-        <div className={styles.productFirstSection}>
-          <div className={styles.productInfo}>
-            <p className={styles.productName}>{product.name}</p>
-            <div className={styles.productColors}>
-              {product.colors.map((color) => (
-                <div className={styles[color]} key={color}></div>
-              ))}
+        <div className={styles.productContainer}>
+          <div className={styles.productFirstSection}>
+            <div className={styles.productInfo}>
+              <p className={styles.productName}>{product.name}</p>
+              <div className={styles.productColors}>
+                {product.colors.map((color) => (
+                  <div className={styles[color]} key={color}></div>
+                ))}
+              </div>
             </div>
+            <DetailButtonUI handleOnClick={handleOnDetailButtonClick} />
           </div>
-          <DetailButtonUI handleOnClick={handleOnDetailButtonClick} />
+          <div className={styles.productSecondSection}>
+            <div className={styles.productPrice}>{product.price} ₽</div>
+            <AddToCartButton product={product} />
+          </div>
         </div>
-      </div>
-      <div className={styles.productSecondSection}>
-        <div className={styles.productPrice}>{product.price} ₽</div>
-        <AddToCartButton product={product} />
       </div>
     </div>
   );
